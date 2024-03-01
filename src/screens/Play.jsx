@@ -77,6 +77,11 @@ const Play = () => {
                 newStacks: newStacks
             }
             console.log("MOVE", move)
+            setGameState(prev => ({
+                ...prev,
+                game: gameState.game,
+                currTurn: move.currTurn
+            }))
             socket.emit("newMove", move)
         } else if (update === "replace") {
             setGameState(prev => ({

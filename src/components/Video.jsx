@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useLayoutEffect } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 import { socket } from '../sockets/connection';
 import "./Video.css";
@@ -23,12 +23,24 @@ const Video = ({gameState}) => {
     const peerRef = useRef();
     const location = useLocation();
 
+    const [middle, setMiddle] = useState(350)
     const [style, setStyle] = useState({
         position: "relative",
         height: "auto",
         right: "0px"
 
     })
+
+    useLayoutEffect(() => {
+        const updateSize = () => {
+            if (peerRef.current) {
+                setMiddle((peerRef.current.clientWidth / 2) - 10)
+            }
+            
+        }
+        window.addEventListener('resize', updateSize);
+        return () => window.removeEventListener('resize', updateSize);
+    }, [])
 
     const { gameId } = useParams();
 
@@ -171,7 +183,7 @@ const Video = ({gameState}) => {
     let userVideo;
     if (stream) {
         userVideo = (
-            <video className="user-video" style={{zIndex: 3, right: peerConnected ? "5px" : "", top: peerConnected ? "5px" : "", visibility: callStarted || receivingCall ? "visible" : "hidden"}} ref={videoRef} autoPlay playsInline controls={false}/>
+            <video className="user-video" style={{zIndex: 3, right: peerConnected ? "15px" : "", top: peerConnected ? "5px" : "", visibility: callStarted || receivingCall ? "visible" : "hidden"}} ref={videoRef} muted autoPlay playsInline controls={false}/>
         )
     }
 
@@ -184,7 +196,7 @@ const Video = ({gameState}) => {
             )
 
             button = (
-                <div style={{position: "absolute", zIndex: 5, display: 'flex', bottom: 10, alignSelf: 'center'}}>
+                <div style={{position: "absolute", zIndex: 5, display: 'flex', bottom: 10, right: middle, alignSelf: "center"}}>
                     <button className='hangup' onClick={endCall}><ImPhoneHangUp size="1.5em" color="white"/></button>
                 </div>
             )
@@ -196,6 +208,13 @@ const Video = ({gameState}) => {
                 <LoadingDots/>
             </div>
         )
+
+        button = (
+            <div style={{position: "absolute", alignSelf: "center", bottom: "10px", zIndex: 5}}>
+                <button className='hangup' onClick={endCall}><ImPhoneHangUp size="1.5em" color="white"/></button>
+            </div>
+        )
+
     } else if (receivingCall) {
         mainVideo = (
             <div className="flex-row" style={{width: "100%", alignItems: "baseline"}}>
@@ -225,7 +244,7 @@ const Video = ({gameState}) => {
     
     return (
         <div className='video-container flex-col'>
-            <p>Opponents: {location.state.users.map(user => user.user)} {gameState.activePlayer}</p>
+            <p style={{alignSelf: "flex-end", marginRight: "20px"}}>Opponents: {location.state.users.map(user => user.user)} {gameState.activePlayer}</p>
             
             <div className="flex-col" style={{position: "relative", height: "100%"}}>
                 {mainVideo}

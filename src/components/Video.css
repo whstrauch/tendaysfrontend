@@ -20,11 +20,13 @@
     display: block;
     height: 100%;
     z-index: 1;
-    align-self: center;
+    align-self: flex-end;
+    margin-right: 10px;
     border-radius: 15px;
     transform: rotateY(180deg);
     -webkit-transform:rotateY(180deg); /* Safari and Chrome */
     -moz-transform:rotateY(180deg);
+    object-fit: contain;
 }
 
 .video-container button {
