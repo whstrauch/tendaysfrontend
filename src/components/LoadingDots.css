@@ -1,0 +1,19 @@
+.dot-container {
+    position: relative;
+    display: flex;
+    /* background-color: white; */
+    height: 1em;
+    align-self: baseline;
+    align-items: flex-end;
+    gap: 1px;
+    margin-left: 1px;
+}
+
+.dot {
+    display: block;
+    width: 3px;
+    height: 3px;
+    border-radius: 1.5px;
+    color: black;
+    background-color: black;
+}

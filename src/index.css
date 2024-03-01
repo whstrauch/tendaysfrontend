@@ -1,13 +1,78 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: DarkerGrotesque, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: tan;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+button {
+  font-family: inherit;
+}
+
+@font-face {
+  font-family: 'DarkerGrotesque';
+  src: local('DarkerGrotesque'), url(./fonts/Darker_Grotesque/static/DarkerGrotesque-SemiBold.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'DarkerGrotesqueBold';
+  src: local('DarkerGrotesqueBold'), url(./fonts/Darker_Grotesque/static/DarkerGrotesque-Bold.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.blue {
+  background-color: 'blue';
+}
+
+.nav-bar {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 5vh;
+  z-index: 5;
+}
+
+.in-game {
+  background-color: #282c34;
+  color: white;
+  max-height: 5vh;
+  transition: max-height 500ms;
+  /* transition-delay: 500ms; */
+}
+
+.in-game h1 {
+  transform: scale(0.5);
+  transition: transform 500ms;
+  transition-delay: 100ms;
+}
+
+

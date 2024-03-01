@@ -1,0 +1,49 @@
+.play-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex: 1;
+    width: 100vw;
+    height: 95vh;
+}
+
+.top-half-section {
+    display: flex;
+    flex-direction: row;
+    max-height: 73%;
+    flex: 1;
+    position: relative;
+    /* background-color: white; */
+}
+
+.map-section {
+    display: flex;
+    width: 25%;
+}
+
+.center-stack-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.8;
+    /* background-color: purple; */
+}
+
+.hand-section {
+    display: flex;
+    flex: 1;
+}
+
+.video-section {
+    display: flex;
+    flex: 1;
+    /* background-color: pink; */
+}
+
+.image-fit {
+    display: flex;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    cursor: pointer;
+}

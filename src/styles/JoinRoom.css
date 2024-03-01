@@ -1,0 +1,17 @@
+.copy-button {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 9px;
+    height: 40px;
+    margin-right: 2px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    background-color: #ff90e8;
+    color: #000;
+}
+
+.copy-button:hover {
+    box-shadow: 3px 3px 0 #000;
+    transform: translate(-3px,-3px);
+}

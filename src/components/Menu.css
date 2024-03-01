@@ -1,0 +1,44 @@
+.menu {
+    background-color: transparent;
+    padding: 0px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.menu:hover {
+    transform: scale(1.1);
+}
+
+.menu-container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 5vh;
+    right: 10px;
+    background: white;
+    gap: 1px;
+    z-index: 10;
+}
+
+.menu-button {
+    display: flex;
+    background-color: transparent;
+    border-style: none;
+    font-size: 14pt;
+    justify-content: flex-start;
+    cursor: pointer;
+    padding: 2px 15px;
+}
+
+.menu-button:last-of-type {
+    padding-bottom: 5px;
+}
+
+.menu-button:first-of-type {
+    padding-top: 5px;
+}
+
+
+.menu-button:hover {
+    background-color: lightgray;
+}

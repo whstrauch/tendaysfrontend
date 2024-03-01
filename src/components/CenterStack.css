@@ -1,0 +1,28 @@
+.center-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.face-up {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.empty-deck {
+    display: grid;
+    width: 120px;
+    height: 160px;
+    place-items: center;
+    padding: 3px
+}
+
+.card-slot {
+    width: 120px;
+    height: 160px;
+    border-width: 1px;
+    border-style: dashed;
+    padding: 3px;
+    border-radius: 4px;
+}
