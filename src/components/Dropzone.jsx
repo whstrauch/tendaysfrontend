@@ -12,7 +12,7 @@ const Dropzone = ({item, location, move}) => {
         accept: ItemTypes.HANDCARD,
         drop: (item, monitor) => {
           console.log("Hand", item, location, monitor.getItem());
-          move(item.id, location, 1);
+          move(item.id, location);
         },
         collect: monitor => ({
           isOver: !!monitor.isOver(),
