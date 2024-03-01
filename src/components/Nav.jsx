@@ -16,7 +16,7 @@ const Nav = ({rules}) => {
     return (
         <div className={navClass}>
             <div style={{width: '45px'}}></div>
-            <h1 className='title'>TEN DAYS IN AFRICA</h1>
+            <h1 className='title'>TESTTEN DAYS IN AFRICA</h1>
             <Menu color={pathname.startsWith("/play") ? "white" : "black"} rules={rules}/>
         </div>
     );

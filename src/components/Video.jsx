@@ -47,7 +47,9 @@ const Video = ({gameState}) => {
     useEffect(() => {
         navigator.mediaDevices.getUserMedia({video: true, audio: true}).then(stream => {
             setStream(stream)
+            console.log("Effect")
             if (videoRef.current) {
+                console.log("Set video ref srcObject")
                 videoRef.current.srcObject = stream;
             }
         })
