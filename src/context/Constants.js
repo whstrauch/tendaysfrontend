@@ -368,41 +368,41 @@ export const BaseDeck = [
     },
     {
         id: 45,
-        country: "",
+        country: "Car",
         capital: "",
-        img: "/Car.png",
+        img: "",
         pop: "",
         player: ""
     },
     {
         id: 46,
-        country: "",
+        country: "Car",
         capital: "",
-        img: "/Car.png",
+        img: "",
         pop: "",
         player: ""
     },
     {
         id: 47,
-        country: "",
+        country: "Car",
         capital: "",
-        img: "/Car.png",
+        img: "",
         pop: "",
         player: ""
     },
     {
         id: 48,
-        country: "",
+        country: "Car",
         capital: "",
-        img: "/Car.png",
+        img: "",
         pop: "",
         player: ""
     },
     {
         id: 49,
-        country: "",
+        country: "Car",
         capital: "",
-        img: "/Car.png",
+        img: "",
         pop: "",
         player: ""
     },
@@ -483,6 +483,14 @@ export const BaseDeck = [
         country: "",
         capital: "",
         img: "/PlaneP.png",
+        pop: "",
+        player: ""
+    },
+    {
+        id: 60,
+        country: "Car",
+        capital: "",
+        img: "",
         pop: "",
         player: ""
     }
