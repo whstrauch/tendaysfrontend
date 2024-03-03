@@ -26,12 +26,12 @@ const NavbarWrapper = () => {
 
 
   return (
-    <StrictMode>
+    <div>
         <Nav rules={() => setRules(!rulesActive)} />
         <RulesModal active={rulesActive} exit={() => setRules(!rulesActive)}/>
         <Outlet/>
         <ScrollRestoration />
-    </StrictMode>  
+    </div>  
   )
 }
 
