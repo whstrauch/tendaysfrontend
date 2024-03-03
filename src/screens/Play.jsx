@@ -1,13 +1,10 @@
 import React from 'react';
-import { useContext } from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Board from '../components/Board';
-import Card from '../components/Card';
 import CenterStack from '../components/CenterStack';
 import Hand from '../components/Hand';
 import Video from '../components/Video';
-import userContext from '../context/userContext';
 import Game from '../model/game';
 import '../styles/Play.css';
 import { HTML5Backend } from 'react-dnd-html5-backend';
@@ -30,12 +27,10 @@ const Play = () => {
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
-        console.log("id", gameId)
         setIsLoaded(true)
 
         socket.on("opponentMove", move => {
             console.log("OppMove", move)
-            console.log(gameState)
             gameState.game.updateDeck(move.newDeck);
             gameState.game.updateStacks(move.newStacks)
             console.log(gameState)

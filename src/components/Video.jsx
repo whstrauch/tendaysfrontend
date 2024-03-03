@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect, useState, useRef, useLayoutEffect } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 import { socket } from '../sockets/connection';
 import "./Video.css";
@@ -314,7 +314,7 @@ const Video = ({gameState}) => {
     
     return (
         <div className='video-container flex-col'>
-            <p style={{alignSelf: "flex-end", marginRight: "20px"}}>Opponents: {location.state.users.map(user => user.user)} {gameState.activePlayer}</p>
+            {location.state.users.length > 1 && <p style={{alignSelf: "flex-end", marginRight: "20px"}}>Playing against: {location.state.users.map(user => {if (user.user !== gameState.activePlayer) {return (user.user)} else {return("")}})}</p>}
             
             <div className="flex-col" style={{position: "relative", height: "100%"}}>
                 {mainVideo}

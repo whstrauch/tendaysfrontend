@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import React from 'react';
-import { useInRouterContext, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Menu from './Menu';
 
 const Nav = ({rules}) => {

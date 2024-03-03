@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import { ItemTypes } from '../context/Constants';
-import { useDrop, useDragDropManager } from 'react-dnd';
+import { useDrop } from 'react-dnd';
 
 const Dropzone = ({item, location, move}) => {
 
@@ -27,7 +27,7 @@ const Dropzone = ({item, location, move}) => {
     );
 };
 
-const StackDropzone = ({stack, location, move}) => {
+const StackDropzone = ({stack, location, move, disabled}) => {
 
   const className = stack.length === 0 ? "card-slot" : ""
 
@@ -45,7 +45,7 @@ const StackDropzone = ({stack, location, move}) => {
 
   return (
       <div className={className} ref={drop}>
-          {stack.length === 0 ? null : <Card item={stack[stack.length - 1]}></Card>}
+          {stack.length === 0 ? null : <Card item={stack[stack.length - 1]} disabled={disabled}></Card>}
       </div>
   );
 };

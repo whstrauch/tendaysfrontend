@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, reverseEasing } from 'framer-motion';
+import { motion } from 'framer-motion';
 import "./LoadingDots.css"
 
 const LoadingDots = () => {

@@ -19,4 +19,13 @@
     border-radius: 10px;
     align-items: center;
     overflow-y: scroll;
+    padding: 5px
+}
+
+.modal-container h3, h4, span {
+    text-decoration: underline;
+}
+
+.modal-container p {
+    margin: 0px;
 }

@@ -370,7 +370,7 @@ export const BaseDeck = [
         id: 45,
         country: "Car",
         capital: "",
-        img: "",
+        img: "/jeep.png",
         pop: "",
         player: ""
     },
@@ -378,7 +378,7 @@ export const BaseDeck = [
         id: 46,
         country: "Car",
         capital: "",
-        img: "",
+        img: "/jeep.png",
         pop: "",
         player: ""
     },
@@ -386,7 +386,7 @@ export const BaseDeck = [
         id: 47,
         country: "Car",
         capital: "",
-        img: "",
+        img: "/jeep.png",
         pop: "",
         player: ""
     },
@@ -394,7 +394,7 @@ export const BaseDeck = [
         id: 48,
         country: "Car",
         capital: "",
-        img: "",
+        img: "/jeep.png",
         pop: "",
         player: ""
     },
@@ -402,7 +402,7 @@ export const BaseDeck = [
         id: 49,
         country: "Car",
         capital: "",
-        img: "",
+        img: "/jeep.png",
         pop: "",
         player: ""
     },
@@ -490,7 +490,7 @@ export const BaseDeck = [
         id: 60,
         country: "Car",
         capital: "",
-        img: "",
+        img: "/jeep.png",
         pop: "",
         player: ""
     }

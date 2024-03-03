@@ -1,15 +1,13 @@
-import React, { memo } from 'react';
-import { useState, useRef } from 'react';
+import React from 'react';
 import './Card.css';
 import cardmap from '../assets/cardmap';
 import { useDrag } from 'react-dnd';
 import { ItemTypes } from '../context/Constants';
-import { useMemo } from 'react';
 
 // country, capital, img, pop, player, onClick, disabled
 
 
-const Card = ({item, onClick}) => {
+const Card = ({item, onClick, disabled}) => {
     let img;
     if (item.img !== "") {
         img = item.img;
@@ -24,6 +22,7 @@ const Card = ({item, onClick}) => {
         options: {
             dropEffect: 'copy'
         },
+        canDrag: !disabled,
         item: item,
         collect: monitor => ({
           isDragging: !!monitor.isDragging(),
@@ -43,7 +42,7 @@ const Card = ({item, onClick}) => {
                 <h3>{item.country?.toUpperCase()}</h3>
                 <h6>{item.capital}</h6>
                 <div>
-                    <img src={img} draggable={false}/>
+                    <img src={img} draggable={false} alt="Country or Transportation Tile"/>
                 </div>
                 <h5>{item.pop}</h5>
                 <h5>{item.player}</h5>
