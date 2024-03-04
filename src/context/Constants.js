@@ -11,55 +11,55 @@ export const BaseDeck = [
         country: "Uganda",
         capital: "Kampala",
         img: "",
-        pop: "15,234,564",
-        player: "Another dude"
+        pop: "48,582,334",
+        player: "Denis Onyango"
     },
     {
         id: 1,
         country: "Somalia",
-        capital: "Smot",
+        capital: "Mogadishu",
         img: "",
-        pop: "11,421,076",
-        player: "John Cena"
+        pop: "18,143,378",
+        player: "Mustaf Yuusuf"
     },
     {
         id: 2,
         country: "Libya",
-        capital: "Anda",
+        capital: "Tripoli",
         img: "",
-        pop: "30,234,564",
-        player: "Another dude"
+        pop: "6,888,388",
+        player: "Ali Musrati"
     },
     {
         id: 3,
         country: "Mozambique",
-        capital: "Mambo",
+        capital: "Maputo",
         img: "",
-        pop: "40,234,564",
-        player: "Another dude"
+        pop: "33,897,354",
+        player: "Eusébio"
     },
     {
         id: 4,
         country: "Zambia",
         capital: "Lusaka",
         img: "",
-        pop: "11,421,076",
-        player: "John Cena"
+        pop: "20,569,737",
+        player: "Patson Daka"
     },
     {
         id: 5,
         country: "Angola",
         capital: "Luanda",
         img: "",
-        pop: "40,234,564",
-        player: "Another dude"
+        pop: "36,684,202",
+        player: "William Carvalho"
     },
     {
         id: 6,
         country: "Ghana",
         capital: "Accra",
         img: "",
-        pop: "14,235,213",
+        pop: "34,121,985",
         player: "Mohammad Kudus"
     },
     {
@@ -67,7 +67,7 @@ export const BaseDeck = [
         country: "D.R.C.",
         capital: "Kinshasa",
         img: "",
-        pop: "56,345,324",
+        pop: "102,262,808",
         player: "Arthur Masuaku"
     },
     {
@@ -75,7 +75,7 @@ export const BaseDeck = [
         country: "D.R.C.",
         capital: "Kinshasa",
         img: "",
-        pop: "56,345,324",
+        pop: "102,262,808",
         player: "Arthur Masuaku"
     },
     {
@@ -83,7 +83,7 @@ export const BaseDeck = [
         country: "Egypt",
         capital: "Cairo",
         img: "",
-        pop: "34,546,234",
+        pop: "112,716,598",
         player: "Mohammad Salah"
     },
     {
@@ -91,15 +91,15 @@ export const BaseDeck = [
         country: "South Africa",
         capital: "Johanesburg",
         img: "",
-        pop: "23,234,234",
-        player: "Oscar Pistorius"
+        pop: "60,414,495",
+        player: "Siphiwe Tshabalala"
     },
     {
         id: 11,
         country: "Morocco",
         capital: "Rabat",
         img: "",
-        pop: "12,314,743",
+        pop: "37,840,044",
         player: "Nayef Aguerd"
     },
     {
@@ -107,23 +107,23 @@ export const BaseDeck = [
         country: "Kenya",
         capital: "Nairobi",
         img: "",
-        pop: "8,234,123",
-        player: "Eliud Kipchoge"
+        pop: "55,100,586",
+        player: "Victor Wanyama"
     },
     {
         id: 13,
         country: "Cameroon",
         capital: "Yaounde",
         img: "",
-        pop: "18,092,352",
-        player: "Some guy"
+        pop: "28,647,293",
+        player: "Samuel Eto'o"
     },
     {
         id: 14,
         country: "Senegal",
         capital: "Dakar",
         img: "",
-        pop: "6,342,365",
+        pop: "17,763,163",
         player: "Sadio Mane"
     },
     {
@@ -273,98 +273,98 @@ export const BaseDeck = [
     {
         id: 33, // Below here is just country names
         country: "Guinea",
-        capital: "Harare",
+        capital: "Conakry",
         img: "",
-        pop: "16,665,409",
-        player: "Marvelous Nakamba"
+        pop: "14,190,612",
+        player: "Naby Keïta"
     },
     {
         id: 34,
         country: "Gabon",
-        capital: "Harare",
+        capital: "Libreville",
         img: "",
-        pop: "16,665,409",
-        player: "Marvelous Nakamba"
+        pop: "2,436,566",
+        player: "Pierre-Emerick Aubameyang"
     },
     {
         id: 35,
         country: "Ethiopia",
-        capital: "Harare",
+        capital: "Addis Ababa",
         img: "",
-        pop: "16,665,409",
-        player: "Marvelous Nakamba"
+        pop: "126,527,060",
+        player: "Adugna Deyas"
     },
     {
         id: 36,
         country: "Eritrea",
-        capital: "Harare",
+        capital: "Asmara",
         img: "",
-        pop: "16,665,409",
-        player: "Marvelous Nakamba"
+        pop: "3,748,901",
+        player: "Tesfalem Tekle"
     },
     {
         id: 37,
         country: "Congo",
-        capital: "Harare",
+        capital: "Brazzaville",
         img: "",
-        pop: "16,665,409",
-        player: "Marvelous Nakamba"
+        pop: "6,106,869",
+        player: "Thievy Bifouma"
     },
     {
         id: 38,
         country: "Chad",
-        capital: "Harare",
+        capital: "N'Djamena",
         img: "",
-        pop: "16,665,409",
-        player: "Marvelous Nakamba"
+        pop: "18,278,568",
+        player: "Ezechiel N'Douassel"
     },
     {
         id: 39,
         country: "Chad",
-        capital: "Harare",
+        capital: "N'Djamena",
         img: "",
-        pop: "16,665,409",
-        player: "Marvelous Nakamba"
+        pop: "18,278,568",
+        player: "Ezechiel N'Douassel"
     },
     {
         id: 40,
         country: "Central African Republic",
-        capital: "Harare",
+        capital: "Bangui",
         img: "",
-        pop: "16,665,409",
-        player: "Marvelous Nakamba"
+        pop: "5,742,315",
+        player: "Geoffrey Kondogbia"
     },
     {
         id: 41,
         country: "Burkina Faso",
-        capital: "Harare",
+        capital: "Ouagadougou",
         img: "",
-        pop: "16,665,409",
-        player: "Marvelous Nakamba"
+        pop: "23,251,485",
+        player: "Jonathan Pitroipa"
     },
     {
         id: 42,
         country: "Botswana",
-        capital: "Harare",
+        capital: "Gaborone",
         img: "",
-        pop: "16,665,409",
-        player: "Marvelous Nakamba"
+        pop: "2,675,352",
+        player: "Dipsy Selolwane"
     },
     {
         id: 43,
         country: "Benin",
-        capital: "Harare",
+        capital: "Porto-Novo",
         img: "",
-        pop: "16,665,409",
-        player: "Marvelous Nakamba"
+        pop: "13,712,828",
+        player: "Steve Mounié"
     },
     {
         id: 44,
         country: "Algeria",
-        capital: "Harare",
+        capital: "Algiers",
         img: "",
-        pop: "16,665,409",
-        player: "Marvelous Nakamba"
+        pop: "45,606,480",
+        player: "Riyad Mahrez"
     },
     {
         id: 45,

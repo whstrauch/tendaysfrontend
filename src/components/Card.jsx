@@ -42,7 +42,7 @@ const Card = ({item, onClick, disabled}) => {
                 <h3>{item.country?.toUpperCase()}</h3>
                 <h6>{item.capital}</h6>
                 <div>
-                    <img src={img} draggable={false} alt="Country or Transportation Tile"/>
+                    {img && <img src={img} draggable={false} alt="Country or Transportation Tile"/>}
                 </div>
                 <h5>{item.pop}</h5>
                 <h5>{item.player}</h5>
